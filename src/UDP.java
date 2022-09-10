@@ -9,7 +9,7 @@ public class UDP {
         Scanner scanner = new Scanner(System.in);
 
         ServerUDP server = new ServerUDP(serverDoor, bufferSize);
-        Client client = new Client(localAdress, serverDoor);
+        ClientUDP client = new ClientUDP(localAdress, serverDoor);
 
         do {
             if (!server.isAlive()) {

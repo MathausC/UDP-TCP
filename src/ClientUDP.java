@@ -5,14 +5,14 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-public class Client {
+public class ClientUDP {
     private DatagramSocket socket;
     private InetAddress address;
     private int serverAdress;
 
     private byte[] buffer;
 
-    public Client(String localAdress, int serverAdress) {
+    public ClientUDP(String localAdress, int serverAdress) {
         try {
             this.serverAdress = serverAdress;
             this.socket = new DatagramSocket();
